@@ -83,16 +83,16 @@ draw:
   printf("╯");
 
   // Log Info:
-  printf("\n  %sP1: %02d" RESET, (P1 > P2) ? GREEN : ((P1 < P2) ? RED : YELLOW),
+  printf("\n  %sP1: %3d" RESET, (P1 > P2) ? GREEN : ((P1 < P2) ? RED : YELLOW),
          P1);
-  for (s_z i = 0; i < (width * 2) - 14; i++)
+  for (s_z i = 0; i < (width * 2) - 16; i++)
     putchar(' ');
-  printf("%sP2: %02d\n" RESET, (P2 > P1) ? GREEN : ((P2 < P1) ? RED : YELLOW),
+  printf("%sP2: %3d\n" RESET, (P2 > P1) ? GREEN : ((P2 < P1) ? RED : YELLOW),
          P2);
 
   // Print Controls:
-  printf("  [W, S]");
-  for (s_z i = 0; i < (width * 2) - 16; i++)
+  printf("   [W, S]");
+  for (s_z i = 0; i < (width * 2) - 18; i++)
     putchar(' ');
   printf("[UP, DOWN]\n");
 
