@@ -65,7 +65,6 @@ draw:
 
   for (s_z i = 1; i <= height; i++) { // draw vertical axis
     printf("│");
-    // putchar('0' + i);
     for (s_z j = 1; j <= width; j++) { // draw horizontal axis
       printf("  ");
       draw(&projectile1, j, i);
