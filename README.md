@@ -19,3 +19,8 @@ controls are explained in-game. but to launch it:
 ```
 ./bong
 ```
+---
+# TODO
+- add game setup and configuration of arena
+- randomize starting ball directions and positions along the y axis
+- add microtransactions
