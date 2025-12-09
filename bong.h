@@ -34,7 +34,7 @@
   #endif
 
   typedef unsigned char tiny;
-  typedef enum : unsigned char { FALSE = 0, TRUE = 1 } BOOL;
+  typedef enum : unsigned char { FALSE, TRUE } BOOL;
   typedef enum : unsigned char { n, x, y } axis;
   typedef struct {
     char *icon;
