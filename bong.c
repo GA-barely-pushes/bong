@@ -109,11 +109,11 @@ draw:
     switch (input) {
     case 'w':
       for (tiny i = 1; i < paddle_speed; i++)
-        (paddle1.position.y <= paddle1.size.y) ? 0 : (paddle1.position.y--);
+        (paddle1.position.y <= paddle1.size.y) ?: (paddle1.position.y--);
       break;
     case 's':
       for (tiny i = 1; i < paddle_speed; i++)
-        (paddle1.position.y >= height) ? 0 : (paddle1.position.y++);
+        (paddle1.position.y >= height) ?: (paddle1.position.y++);
       break;
     case 'q':
       goto end;
@@ -123,11 +123,11 @@ draw:
       switch (input = getchar()) {
       case 'A':
         for (tiny i = 1; i < paddle_speed; i++)
-          (paddle2.position.y <= paddle2.size.y) ? 0 : (paddle2.position.y--);
+          (paddle2.position.y <= paddle2.size.y) ?: (paddle2.position.y--);
         break;
       case 'B':
         for (tiny i = 1; i < paddle_speed; i++)
-          (paddle2.position.y >= height) ? 0 : (paddle2.position.y++);
+          (paddle2.position.y >= height) ?: (paddle2.position.y++);
         break;
       }
       break;
